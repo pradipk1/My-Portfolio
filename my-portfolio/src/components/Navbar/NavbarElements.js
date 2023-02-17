@@ -21,6 +21,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
+    background: #000;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
@@ -31,6 +32,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
     color: #fff;
+    background: #000;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -53,6 +55,7 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;
+        background: #000;
     }
 `;
 
@@ -74,6 +77,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
     color: #fff;
+    background: #000;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -83,5 +87,37 @@ export const NavLinks = styled(LinkS)`
 
     &.active{
         border-bottom: 3px solid #01bf71;
+    }
+`;
+
+export const NavBtn = styled.nav`
+    display: flex;
+    align-items: center;
+    background: #000;
+    
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+`;
+
+export const ResumeBtn = styled(LinkR)`
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
     }
 `;

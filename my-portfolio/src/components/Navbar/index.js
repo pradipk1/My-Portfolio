@@ -1,30 +1,37 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, ResumeBtn} from './NavbarElements';
 
-const Navbar = () => {
+
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
           <NavbarContainer>
-              <NavLogo to='/'>me</NavLogo>
-              <MobileIcon>
-                <FaBars />
+              <NavLogo to='/'>ME</NavLogo>
+              <MobileIcon onClick={toggle}>
+                <FaBars style={{background: '#000'}} />
               </MobileIcon>
               <NavMenu>
                 <NavItem>
-                  <NavLinks to='about'>About</NavLinks>
+                  <NavLinks to='home' spy={true} smooth={true} offset={-100} duration={500}>HOME</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='Discover'>Discover</NavLinks>
+                  <NavLinks to='about' spy={true} smooth={true} offset={-100} duration={500}>ABOUT</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='Services'>Services</NavLinks>
+                  <NavLinks to='skills' spy={true} smooth={true} offset={-100} duration={500}>SKILLS</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='signup'>Sign Up</NavLinks>
+                  <NavLinks to='projects' spy={true} smooth={true} offset={-100} duration={500}>PROJECTS</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to='contacts' spy={true} smooth={true} offset={-100} duration={500}>CONTACTS</NavLinks>
                 </NavItem>
               </NavMenu>
+              <NavBtn>
+                <ResumeBtn to='https://github.com/' target='_blank'>RESUME</ResumeBtn>
+              </NavBtn>
           </NavbarContainer>
       </Nav>
     </>

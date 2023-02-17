@@ -4,5 +4,16 @@
   padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
 
-  
+  /* background-color: #171923; */
+  /* background-color: rgb(15, 22, 36); */
+  color: #fff;
+
+}
+
+.colored-span-tag{
+  color: rgb(218, 154, 18);
+}
+.section-head-tag{
+  text-align: center;
+  margin-bottom: 50px;
 }
