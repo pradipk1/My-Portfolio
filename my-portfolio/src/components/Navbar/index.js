@@ -1,14 +1,19 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, ResumeBtn} from './NavbarElements';
+import {animateScroll as scroll} from 'react-scroll'
 
 
 const Navbar = ({toggle}) => {
+
+  const toggleHome=()=>{
+    scroll.scrollToTop();
+  }
   return (
     <>
       <Nav>
           <NavbarContainer>
-              <NavLogo to='/'>ME</NavLogo>
+              <NavLogo onClick={toggleHome}><span className='colored-span-tag'>PRADIP</span></NavLogo>
               <MobileIcon onClick={toggle}>
                 <FaBars style={{background: '#000'}} />
               </MobileIcon>
@@ -17,16 +22,16 @@ const Navbar = ({toggle}) => {
                   <NavLinks to='home' spy={true} smooth={true} offset={-100} duration={500}>HOME</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='about' spy={true} smooth={true} offset={-100} duration={500}>ABOUT</NavLinks>
+                  <NavLinks to='about' spy={true} smooth={true} offset={-10} duration={500}>ABOUT</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='skills' spy={true} smooth={true} offset={-100} duration={500}>SKILLS</NavLinks>
+                  <NavLinks to='skills' spy={true} smooth={true} offset={-10} duration={500}>SKILLS</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='projects' spy={true} smooth={true} offset={-100} duration={500}>PROJECTS</NavLinks>
+                  <NavLinks to='projects' spy={true} smooth={true} offset={-10} duration={500}>PROJECTS</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='contacts' spy={true} smooth={true} offset={-100} duration={500}>CONTACTS</NavLinks>
+                  <NavLinks to='contacts' spy={true} smooth={true} offset={-10} duration={500}>CONTACTS</NavLinks>
                 </NavItem>
               </NavMenu>
               <NavBtn>

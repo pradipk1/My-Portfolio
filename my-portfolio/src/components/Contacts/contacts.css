@@ -1,15 +1,15 @@
 #contacts{
     background-color: rgb(15, 22, 36);
-    padding: 100px 100px 50px 100px;
+    padding: 120px 100px 50px 100px;
     text-align: center;
 }
 #contacts>h2{
     color: #53c8ec;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #contacts>h3{
     color: #768a91;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .contacts-link-div{
     display: grid;
