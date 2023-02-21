@@ -24,3 +24,56 @@
 .skills-a>img{
     width: 100%;
 }
+
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+    #skills{
+        padding: 80px 60px;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .skills-desc-div{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .skills-card-div{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .skills-desc-div{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .skills-card-div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    #skills{
+        padding: 80px 40px;
+    }
+    .skills-desc-div{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 480px){
+    #skills{
+        padding: 80px 40px;
+    }
+    .skills-desc-div{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 340px){
+    #skills{
+        padding: 80px 40px;
+    }
+    .skills-desc-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

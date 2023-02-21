@@ -21,7 +21,7 @@
     border-radius: 5px;
 }
 .project-desc{
-    width: 40%;
+    width: 45%;
 }
 .projects-link{
     display: flex;
@@ -29,6 +29,7 @@
 .projects-git-link{
     text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-right: 40px;
     border-radius: 20px;
@@ -47,4 +48,62 @@
 }
 .projects-git-link>svg{
     margin-right: 5px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+    #projects{
+        padding: 80px 60px;
+    }
+    .projects-card-div{
+        padding: 13px;
+    }
+    .projects-img-div{
+        width: 55%;
+    }
+    .project-desc{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 880px){
+    .projects-card-div{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .projects-img-div{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .project-desc{
+        width: 98%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 660px){
+    #projects{
+        padding: 80px 40px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #projects{
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .projects-card-div{
+        padding: 10px;
+    }
+    .projects-link{
+        flex-direction: column;
+    }
+    .projects-git-link{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }

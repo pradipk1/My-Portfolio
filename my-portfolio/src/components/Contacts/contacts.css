@@ -9,7 +9,7 @@
 }
 #contacts>h3{
     color: #768a91;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .contacts-link-div{
     display: grid;
@@ -37,4 +37,34 @@
 }
 .contacts-link>svg{
     margin-right: 5px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 950px){
+    .contacts-link-div{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 650px){
+    #contacts{
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #contacts{
+        padding: 80px 40px;
+    }
+    .contacts-link-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width: 380px){
+    #contacts{
+        padding: 80px 20px;
+    }
 }

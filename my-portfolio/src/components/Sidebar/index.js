@@ -16,7 +16,7 @@ function Sidebar({isOpen, toggle}) {
                 <SidebarLink to='contacts' onClick={toggle} spy={true} smooth={true} offset={-100} duration={500}>Contacts</SidebarLink>
             </SidebarMenu>
             <SidebarBtnWrap>
-                <SidebarResumeBtn to='https://github.com/' target='_blank' onClick={toggle}>Resume</SidebarResumeBtn>
+                <SidebarResumeBtn to='https://drive.google.com/file/d/15O9C9FrH0gYVbRF5Y-rG8Rv1WZr0Xug1/view?usp=sharing' target='_blank' onClick={toggle}>Resume</SidebarResumeBtn>
             </SidebarBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>

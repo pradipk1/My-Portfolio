@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
                 </NavItem>
               </NavMenu>
               <NavBtn>
-                <ResumeBtn to='https://github.com/' target='_blank'>RESUME</ResumeBtn>
+                <ResumeBtn to='https://drive.google.com/file/d/15O9C9FrH0gYVbRF5Y-rG8Rv1WZr0Xug1/view?usp=sharing' target='_blank'>RESUME</ResumeBtn>
               </NavBtn>
           </NavbarContainer>
       </Nav>

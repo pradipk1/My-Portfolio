@@ -10,18 +10,18 @@
     justify-content: center;
 }
 .home-img-div>img{
-    width: 70%;
+    width: 72%;
 }
 .home-desc-div{
     width: 60%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 .home-h2{
     margin: 13px auto;
     font-size: 32px;
 }
 .wave{
-    animation: waving-hand 2s infinite;
+    animation: waving-hand 1.5s infinite;
     transform-origin: 100% 100%;
     display: inline-block;
 }
@@ -67,4 +67,90 @@
     border: none;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+    .home-img-div{
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+    .home-img-div>img{
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 910px){
+    #home{
+        padding: 120px 60px;
+    }
+    .home-img-div{
+        margin-right: 30px;
+    }
+    .home-h2{
+        font-size: 30px;
+    }
+    .home-h1{
+        font-size: 38px;
+    }
+    .home-img-div>img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #home{
+        flex-direction: column;
+        padding: 80px ;
+    }
+    .home-img-div{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .home-desc-div{
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+    .home-h2{
+        font-size: 28px;
+    }
+    .home-h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #home{
+        padding: 80px 40px;
+    }
+    .home-desc-div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #home{
+        padding: 80px 20px;
+    }
+    .home-h2{
+        font-size: 22px;
+    }
+    .home-h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .home-img-div>img{
+        width: 150px;
+    }
+    .home-h2{
+        font-size: 20px;
+    }
+    .home-h1{
+        font-size: 26px;
+    }
 }
