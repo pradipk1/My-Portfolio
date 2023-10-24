@@ -35,7 +35,7 @@ const Navbar = ({toggle}) => {
                 </NavItem>
               </NavMenu>
               <NavBtn>
-                <ResumeBtn to='https://drive.google.com/file/d/15O9C9FrH0gYVbRF5Y-rG8Rv1WZr0Xug1/view?usp=sharing' target='_blank'>RESUME</ResumeBtn>
+                <ResumeBtn to='https://drive.google.com/drive/folders/1Jgr6K1Psix8TY_qJFLU8xye7BY_pLaa_?usp=drive_link' target='_blank'>RESUME</ResumeBtn>
               </NavBtn>
           </NavbarContainer>
       </Nav>
